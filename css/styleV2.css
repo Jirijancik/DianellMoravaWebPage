@@ -1,0 +1,284 @@
+*{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        margin-top: 0;
+}
+
+
+
+
+
+body{
+    font-family: 'Raleway', 'sams-serif';
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #DB3844;
+    margin: 0px;
+    padding: 0px;
+    height: 2500px;
+}
+
+h2{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+/*NAVBAR*/
+
+
+.navbar-default{
+    background-color:transparent;
+    padding-top: 0px;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    border: none;
+    background-color:transparent;
+    position: relative;
+    z-index: 110;
+    transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    -webkit-transition:all 1s;
+    
+    
+}
+
+.colapse .navbar-colapse{
+    height: 250px;
+}
+
+
+.navbar-btn{
+    margin: 0;
+    padding: 0;
+    float: right;
+    border: none;
+    text-align: center;
+    
+}
+
+/*active navbar btn*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+}
+
+/*Bottom line effect*/
+/*TODO: separate lenghts*/
+.hvr-fade:before {
+  content: "";
+  position: absolute;
+/*  width: 50%;*/
+  height: 2px;
+  bottom: 0.75em;
+    right:50%;
+    left: 50%;
+    margin-left: -45px;
+    margin-right: -45px;
+/*  left: 0rem;*/
+  background-color: white;
+  visibility:hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.hvr-fade:hover:before {
+    padding-left: 3em;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*hoover text collor*/
+.navbar-item-text{
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.Brand-wrapper{
+    position: relative;
+}
+
+
+/*
+.dog-logo-img{
+    position: absolute;
+    opacity: 0.65;
+}
+*/
+
+a.navbar-brand{
+
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 1.875rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 520px !important;
+    color: white !important;
+}
+
+.navbar-brand-p{
+    position: absolute;
+
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.8em;
+    margin-top: 70px;
+    padding-left: 0.55rem;
+/*    text-transform: uppercase;*/
+    font-weight: 400;
+}
+
+
+.navbar-fixed-top {
+    position:fixed !important;
+}
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+.header{
+    
+    background-image: url("../images/newV1/dog-header.jpg");
+    background-attachment: fixed; /*this specifies if img should scroll or be fixed*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%; /*the background image will be positioned in the center of the element, using percent*/
+    background-size: cover; /*	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+    
+        /*web browsers default bg size*/
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
+    width: 1920px;
+    height: 800px;
+    padding-top: 0;
+    margin-top: -2.7em;
+
+}
+
+.header-overlay{
+    background-color: rgba(31,31,31,0.30);
+    background-size: cover;
+    width: 1920px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+
+/*General Random stuff*/
+
+.o-stanici{
+    margin-top: 2.8333333333333335rem;
+}
+
+.h2-o-stanici{
+        font-size: 30px;
+}
+
+#p-o-stanici{
+    width: 700px;
+    height: 250;
+/*    position: relative;*/
+    margin-left: 137.5px;
+    margin-right:137.5px;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    
+}
+
+
+
+/*dogs menu*/
+
+.dogs-menu{
+    margin-top: 15em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex: 1 0 20%; /* explanation below */
+  margin: 5px;
+  width: 450px;
+  height: 600px;
+  background-color: blue;
+}
+
+.child:hover{
+    opacity: 0.8;
+}
+
+
+.dog-1{
+    background-image: url(../images/newV1/dog-card-1.jpg);
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-size: cover;
+}
+
+.dog-2{
+    background-image: url(../images/newV1/dog-card-2.jpg);
+ 
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
