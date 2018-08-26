@@ -39,6 +39,19 @@ p{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*NAVBAR*/
 
 
@@ -165,6 +178,16 @@ a.navbar-brand{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*HEADER*/
 .header{
     
@@ -190,7 +213,25 @@ a.navbar-brand{
     background-size: cover;
     width: 1920px;
     height: 800px;
+    -moz-box-shadow:    inset 0 0 50px #000000;
+    -webkit-box-shadow: inset 0 0 50px #000000;
+    box-shadow:         inset 0 0 50px #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,6 +262,62 @@ a.navbar-brand{
 }
 
 
+.shadow
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+.shadow:before, .shadow:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.shadow:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.shadow:hover{
+    -moz-box-shadow:    inset 0 0 5px #000000 !important;
+    -webkit-box-shadow: inset 0 0 5px #000000 !important;
+    box-shadow:         inset 0 0 5px #000000 !important;   
+    
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*dogs menu*/
 
@@ -237,34 +334,47 @@ a.navbar-brand{
 
 .child {
   flex: 1 0 20%; /* explanation below */
-  margin: 5px;
-  width: 450px;
+  margin: 10px;
+  width: 430px;
   height: 600px;
-  background-color: blue;
+  
 }
 
 .child:hover{
-    opacity: 0.8;
+    -webkit-transition: all ease-in-out;
+    -moz-transition: all ease-in-out;
+    -o-transition: all ease-in-out;
+    transition: all ease-in-out;
+    filter: blur(1px);
+    opacity: 0.85;   
 }
 
 
 .dog-1{
+/*
     background-image: url(../images/newV1/dog-card-1.jpg);
 
     background-repeat: no-repeat;
     background-position: 50% 50%; 
     background-size: cover;
+*/
 }
 
 .dog-2{
+/*
     background-image: url(../images/newV1/dog-card-2.jpg);
  
     background-repeat: no-repeat;
     background-position: 50% 50%; 
     background-size: cover;
+*/
 }
 
-
+.dog-img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-size: cover;
+}
 
 
 

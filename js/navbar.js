@@ -17,6 +17,7 @@ $(document).ready(function(){
             
             $('.navbar-default').css({
                 'background-color': 'rgba(219,56,68,0.0)',
+                'height': '120px',
                 'margin-top': '3.75rem'             
             });
             
@@ -45,6 +46,7 @@ $(document).ready(function(){
             
             $('.navbar-default').css({
                 'background-color': 'rgba(219,56,68,0.85)',
+                'height': '100px',
                 'border-color': '#444'
                 
             });
@@ -95,6 +97,23 @@ $(document).ready(function(){
 //    
 //});
 
+$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 0
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
+
+
+
 /* active menu item on click */
 //$(document).ready(function() {
 //    
@@ -111,11 +130,11 @@ $(document).ready(function(){
 //    
 //    });
 //});
-
+//
 
 
 // Add bx slider to screens
-//
+
 //$(function(){
 //  $('.bxslider').bxSlider({
 //        slideWidth: 292.5,
@@ -125,7 +144,7 @@ $(document).ready(function(){
 //        slideMargin: 50
 //  });
 //});
-
+//
 
 
 // Add counter
