@@ -8,7 +8,7 @@ $(document).ready(function(){
         
         'use strict';
         
-        if($(window).scrollTop() < 600 ) {
+        if($(window).scrollTop() < 450 ) {
             
             $('.navbar').css ({
               
@@ -22,17 +22,18 @@ $(document).ready(function(){
             });
             
             $('.navbar-item-text').css({
-               'font-size': '30px',
+               'font-size': '1.56vw',
                 'padding-top': '0px'
             });
             
             $('.navbar-brand').css({
-               'font-size': '40px'
+               'font-size': '2.08vw'
                 
             });
             
             $('.navbar-brand-p').css({
-               'font-size': '30px'
+                'font-size': '1.56vw',
+                'margin-top': '-0.52vw'
                 
             });              
             
@@ -52,17 +53,18 @@ $(document).ready(function(){
             });
             
             $('.navbar-brand').css({
-               'font-size': '30px'
+               'font-size': '1.56vw'
                 
             });
             
             $('.navbar-brand-p').css({
-               'font-size': '20px'
+               'font-size': '1.2vw',
+                'margin-top': '0px'
                 
             });            
             
             $('.navbar-item-text').css({
-               'font-size': '25px',
+               'font-size': '1.2vw',
                 'padding-top': '0px'
                 
             });
@@ -96,7 +98,7 @@ $(document).ready(function(){
 //    
 //    
 //});
-
+//
 $(document).ready(function () {
      $('a[href^="#"]').on('click', function (e) {
          e.preventDefault();
