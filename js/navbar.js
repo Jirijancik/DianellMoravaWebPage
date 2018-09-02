@@ -168,5 +168,45 @@ $(document).ready(function(){
 });
 
 
+//hide show
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".dog_menu").hide();
+    });
+    $("#show").click(function(){
+        $(".dog_menu").show();
+    });
+});
 
+
+function Show_Hide_Dianna() {
+    var Dianna = document.getElementById("dog_menu_Dianna");
+    var Anabel = document.getElementById("dog_menu_Anabel");
+    
+    if (Dianna.style.display === "none") {
+        Dianna.style.display = "block",
+        Anabel.style.display = "none";
+    } 
+    else {
+        Dianna.style.display = "block",
+        Anabel.style.display = "none";
+    }
+}
+
+
+function Show_Hide_Anabel() {
+    var Dianna = document.getElementById("dog_menu_Dianna");
+    var Anabel = document.getElementById("dog_menu_Anabel");
+
+    
+    if (Anabel.style.display === "none") {
+        Anabel.style.display = "block",
+        Dianna.style.display = "none";
+        
+    } 
+    else {
+        Anabel.style.display = "block",
+        Dianna.style.display = "none";
+    }
+}
 
