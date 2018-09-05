@@ -328,15 +328,7 @@ hr,.hr-1{
 
 
 
-/*dogs menu*/
-
-/*
-.dogs-menu{
-    margin-top: 15em;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-*/
+/*dogs cards*/
 
 .h2-dog-cards{
         margin-top: 12rem;
@@ -359,8 +351,6 @@ hr,.hr-2{
     margin-top: 110px;
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 .child {
@@ -370,9 +360,6 @@ hr,.hr-2{
     height: 730px;
     display: flex;
     justify-content: center;   
-
-
-  
 }
 
 
@@ -388,10 +375,6 @@ width:445.1px;
 height:621px;
 position:absolute;
 overflow:hidden;
-/*
-top:0;
-left:0;
-*/
 opacity:0;
 background-color:rgba(0,0,0,0.25);
 -webkit-transition:all .4s ease-in-out;
@@ -469,54 +452,6 @@ transition-delay:.1s;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.child:hover{
-    -webkit-transition: all ease-in-out;
-    -moz-transition: all ease-in-out;
-    -o-transition: all ease-in-out;
-    transition: all ease-in-out;
-    filter: blur(1px);
-    opacity: 0.85;   
-}
-*/
-
-
-.dog-1{
-/*
-    background-image: url(../images/newV1/dog-card-1.jpg);
-
-    background-repeat: no-repeat;
-    background-position: 50% 50%; 
-    background-size: cover;
-*/
-}
-
-.dog-2{
-/*
-    background-image: url(../images/newV1/dog-card-2.jpg);
- 
-    background-repeat: no-repeat;
-    background-position: 50% 50%; 
-    background-size: cover;
-*/
-}
-
 .dog-img{
     background-repeat: no-repeat;
     background-position: 50% 50%; 
@@ -524,41 +459,6 @@ transition-delay:.1s;
 }
 
 
-/*
-
-.trigger {
-  input[type="checkbox"] {
-    
- 
-    & + span {
-      visibility: hidden;
-      opacity: 0;
-    
-      transition: visibility 0s linear 0.33s, opacity 0.33s linear;
-    }
-    
-   
-    &:checked + span {
-      visibility: visible;
-      opacity: 1;
-      
-      transition-delay: 0s;
-    }
-  }
-}
-
-
-.msg {
-  display: block;
-  margin-top: 8px;
-  padding: 8px 12px;
-  
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-
-*/
 
 
 
@@ -568,12 +468,14 @@ transition-delay:.1s;
 
 
 
-
-
-/*DIanna menu*/
+/*DOG MENU*/
 
 .x{
    display: none; 
+}
+
+#DIANNA , #ANABEL{
+    padding-top: 1rem;
 }
 
 .dog-menu{
@@ -647,8 +549,84 @@ transition-delay:.1s;
 
 
 
+/*MAP*/
+
+.map-container{
+    padding-top: 1rem;
+    position: relative;
+    z-index: 3;
+    margin-top: 11rem;
+}
+
+.h2-kontakt-map{
+        margin-top: 12rem;
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+}
+
+.hr-3{
+    color: white;
+    width: 290px;
+    right:50%;
+    left: 50%;
+    margin-left: -145px;
+    margin-right: -145px;
+    margin-bottom: 3em;
+    position: relative;
+    
+}
 
 
+.map-table{
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 320px;
+    height: 280px;
+    z-index: 5;
+    margin-left: 90px;
+    margin-top: 120px;
+}
+
+.h2-map-table{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    
+}
+
+.hr-map-table{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.p-map-table{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.tel-map-table{}
+
+.bold{
+    font-weight: 600;
+}
+
+
+ #map {
+        height: 630px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+     z-index: 4;
+       }
 
 
 
