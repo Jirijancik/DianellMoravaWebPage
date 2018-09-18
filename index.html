@@ -18,7 +18,7 @@
                 <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styleV2.css">
+        <link rel="stylesheet" type="text/css" href="css/style_green.css">
 
     </head>
     <body>
@@ -60,11 +60,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                  <li class="active navbar-btn hvr-fade first-button"><a href="#ABOUT_US"><span class="pulse navbar-item-text .hvr-sweep-to-bottom">O Stanici</span> <span class="sr-only">(current)</span></a></li>
+                  <li class="active navbar-btn hvr-fade first-button"><a href="#HOME"><span class="pulse navbar-item-text .hvr-sweep-to-bottom">O Stanici</span> <span class="sr-only">(current)</span></a></li>
                   <li class="navbar-btn hvr-fade"><a href="#OURDOGS"><span class="navbar-item-text">Naši Psi</span></a></li>
                   <li class="navbar-btn hvr-fade"><a href="#"><span class="navbar-item-text">Štěňata</span></a></li>
                   <li class="navbar-btn hvr-fade"><a href="#KONTAKT"><span class="navbar-item-text">Kontakt</span></a></li>
-                  <li class="navbar-btn hvr-fade"><a href="#"><span class="navbar-item-text ">Fotogalerie</span></a></li>
+                  <li class="navbar-btn hvr-fade"><a href="#GALLERY"><span class="navbar-item-text ">Fotogalerie</span></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -80,11 +80,11 @@
         
              <!--ABOUT US-->
         
-        <div class="container o-stanici" id="ABOUT_US">
+        <div class=" o-stanici" id="ABOUT_US">
         
-            <div class="row">
+            <div class="">
         
-                <div class="col-md-10 col-md-offset-1">
+                <div class="">
             
                     <h2 class="h2-o-stanici">Chovatelská stanice Úsvit</h2>
                     <hr class="hr-1">
@@ -110,8 +110,10 @@
         <div class="container" id="OURDOGS">
         
             <h2 class="h2-dog-cards">Naši psi</h2>
-            
+                        
             <hr class="hr-2">
+            
+            <p>Naší psí rodinu momentálně tvoří dvě fenečky Dianna a Ella</p>
             
             
             <div class="parent">
@@ -132,9 +134,9 @@
                 
                 <div class="overlay">  
                       
-                      <h2>Anabel</h2>
+                      <h2>Ella</h2>
                       
-                      <a class="info" onclick="Show_Hide_Anabel()" href="#ANABEL">Více</a>
+                      <a class="info" onclick="Show_Hide_Ella()" href="#ELLA">Více</a>
                       
                 </div>
                 
@@ -162,6 +164,8 @@
             
                 <h3 class="h3-dog-menu">Dianna</h3>
                 
+                <hr class="hr-2">
+                
                 <p class="p-dog-menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante a dolor vehicula venenatis. Nulla quis ullamcorper nisi. Cras ornare neque in dignissim commodo. Maecenas at sapien consequat, porttitor felis</p>
             
                 <button class="btn btn-default btn-awards" type="button">Rodokmen</button>
@@ -176,14 +180,16 @@
         
                 
         <!--  DIANNA-MENU  -->
-  <div id="ANABEL">    
-    <div class="x" id="dog_menu_Anabel">    
+  <div id="ELLA">    
+    <div class="x" id="dog_menu_Ella">    
         
         <div class="dog-menu" >
             
             <div class="info-table">
             
-                <h3 class="h3-dog-menu">Anabel</h3>
+                <h3 class="h3-dog-menu">Ella</h3>
+                
+                <hr class="hr-2">
                 
                 <p class="p-dog-menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ante a dolor vehicula venenatis. Nulla quis ullamcorper nisi. Cras ornare neque in dignissim commodo. Maecenas at sapien consequat, porttitor felis</p>
             
@@ -196,6 +202,57 @@
         
     </div>   
   </div>        
+        
+        
+        
+    
+<!--    GALERIE -->
+        
+    <div class="container" id="GALLERY">
+        
+            <h2 class="h2-dog-cards">Galerie</h2>
+                        
+            <hr class="hr-2">
+    
+        <div class="gallery parent2">
+        
+            <div class="row-x">
+            
+                  <div class="column child2">
+                    <img src="images/newV1/Gallery/img1.jpg" alt="Nature"  onclick="myFunction(this);">
+                  </div>
+                
+                  <div class="column child2">
+                    <img src="images/newV1/Gallery/img2.jpg" alt="Snow"  onclick="myFunction(this);">
+                  </div>
+                
+                  <div class="column child2">
+                    <img src="images/newV1/Gallery/img3.jpg" alt="Mountains"  onclick="myFunction(this);">
+                  </div>
+                
+                  <div class="column child2">
+                    <img src="images/newV1/Gallery/img4.jpg" alt="Lights"  onclick="myFunction(this);">
+                  </div>
+                
+                  <div class="column child2">
+                    <img src="images/newV1/Gallery/img5.jpg" alt="Nature"  onclick="myFunction(this);">
+                  </div>
+            
+            </div>
+        
+        </div>
+        
+    </div>
+        
+    
+        <div class="container-x">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+        
+        
+        
         
         
         
@@ -237,7 +294,7 @@
  
         
                <!-- Navbar JavaScript -->
-        <script src="js/navbar.js"></script> 
+        <script src="js/navbar_green.js"></script> 
         
         
                 <!--Map Script-->

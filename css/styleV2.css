@@ -9,6 +9,10 @@
         margin-top: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
 
 
@@ -17,7 +21,7 @@ body{
     font-family: 'Raleway', 'sams-serif';
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: #DB3844;
+    background-color: rgba(51, 62, 2, 0.65);
     margin: 0px;
     padding: 0px;
     height: 4500px;
@@ -187,8 +191,8 @@ p{
 .header{
     
     width: 100%;
-    height: 700px;
-    background-image: url("../images/newV1/dog-header.jpg");
+    height: 900px;
+    background-image: url("../images/newV1/dog-header-big.jpg");
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-position: 50% 50%; 
@@ -206,7 +210,7 @@ p{
     background-color: rgba(31,31,31,0.30);
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 900px;
     -moz-box-shadow:    inset 0 0 50px #000000;
     -webkit-box-shadow: inset 0 0 50px #000000;
     box-shadow:         inset 0 0 50px #000000;
@@ -243,29 +247,43 @@ hr,.hr-1{
     left: 50%;
     margin-left: -280px;
     margin-right: -280px;
-    position: relative;
+/*    position: relative;*/
+    
 
 }
 
 .o-stanici{
+    position: absolute;
+    margin-top: -40rem;
+    right:50%;
+    left: 50%;
+    margin-left: -425px;
+    margin-right: -425px;
+    width: 850px;
+    height: 350px;
+    background-color: rgba(31,31,31,0.55);
+    border: 2px solid #FFFFFF;
+    
+
     
 }
 
 .h2-o-stanici{
-        margin-top: 12rem;
+/*        margin-top: -50rem;*/
         font-size: 30px;
         text-transform: uppercase;
 }
 
 #p-o-stanici{
-    width: 800px;
-    height: 250px;
+
+/*
     position: relative;
     right:50%;
     left: 50%;
     margin-left: -400px;
     margin-right: -400px;
     margin-top: 35.5px;
+*/
     font-size: 25px;
     
 }
@@ -330,6 +348,7 @@ hr,.hr-1{
 
 /*dogs cards*/
 
+
 .h2-dog-cards{
         margin-top: 12rem;
         font-size: 30px;
@@ -348,7 +367,7 @@ hr,.hr-2{
 }
 
 .parent {
-    margin-top: 110px;
+    margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -357,7 +376,7 @@ hr,.hr-2{
     flex: 1 0 20%; 
     margin: 10px;
     width: 550px;
-    height: 730px;
+    height: 680px;
     display: flex;
     justify-content: center;   
 }
@@ -474,8 +493,8 @@ transition-delay:.1s;
    display: none; 
 }
 
-#DIANNA , #ANABEL{
-    padding-top: 1rem;
+#DIANNA , #ELLA{
+    padding-top: 6rem;
 }
 
 .dog-menu{
@@ -492,16 +511,20 @@ transition-delay:.1s;
     margin: 0;
     padding: 0;
     z-index: 1;
-    margin-top: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
 }
 
 .info-table{
     z-index: 5;
     position: relative;
-    padding-top: 40px;
-    padding-left: 35px;
-
-
+    margin-top: 40px;
+    margin-left: 35px;
+    bottom: -40px;
+     height: 750px;
+    width: 760px;
+ background-color:rgba(0,0,0,0.40);
+    border: 1px solid white;
 }
 
 .h3-dog-menu{
@@ -509,20 +532,20 @@ transition-delay:.1s;
     font-size: 70px;
     text-transform: uppercase;
     position: relative;
-    padding-left: 100px;
-
+/*    padding-left: 100px;*/
+    text-align: center;
+    margin-bottom: -15px;
 }
 
 
 .p-dog-menu{
     color: black;
     font-size: 30px;
-    height: 500px;
-    width: 480px;
-/*    border: 1px solid white;*/
+    width: 600px;
+    margin-left: 8rem;
     padding: 40px;
     padding-top: 85px;
-    
+   
 }
 
 .btn-awards {
@@ -531,13 +554,18 @@ transition-delay:.1s;
     text-transform: uppercase;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif; 
-    border: 2 solid white;
+    border: 0 solid white;
     padding: 5px 20px;
     border-radius: 0;
+    margin-left: 100px;
+    margin-top: 10rem;
 
 }
 
-
+.btn-awards:hover{
+    background: white;
+    color: black;
+}
 
 
 
@@ -633,6 +661,139 @@ transition-delay:.1s;
 
 
 
+
+/*Gallery*/
+
+/*
+.parent2 {
+    margin-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
+        align-items: center;
+}
+
+.child2 {
+    flex: 1 0 20%; 
+    margin: 10px;
+    width: 650px;
+    height: 300px;
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+
+}
+*/
+
+
+.gallery{
+/*            height: 1500px;*/
+    width: 1900px;
+    height: 800px;
+    overflow-x: auto;
+    display: inline-block;
+    margin-left: -400px;
+    margin-bottom: 10em;
+    position: relative;
+    
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    
+
+
+
+    
+}
+
+/* Style the images inside the grid */
+.column img {
+/*
+    margin-bottom: -400px;
+    opacity: 0.9; 
+*/  position: relative;
+    cursor: pointer; 
+/*        width: 100%;*/
+        background-repeat: no-repeat;
+    width: 700px;
+    background-size: cover; 
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
+    background-position: cover;
+    margin: 2em 30px;
+    margin-left: -8em;
+box-shadow: 0 4px 2px -3px;
+    
+/*
+    transform: rotate(90deg);
+  transform-origin: right top;
+*/
+}
+
+.column img:hover {
+    opacity: 1;
+    display: inline-block;
+}
+
+.row-x{
+
+/*
+transform: rotate(-90deg);
+  transform-origin: right top;
+    flex-wrap: nowrap;
+height: 2000px;
+*/
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1000px;
+      float: right !important;
+    right: 0 !important;
+    width: 600px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* The expanding image container */
+.container-x {
+    margin-top: -950px;
+    position: relative;
+    display: none;
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 40rem;
+    margin-left: 8em;
+    box-shadow: 0 4px 2px -3px;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
 
 
 
