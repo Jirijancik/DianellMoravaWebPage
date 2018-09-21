@@ -8,16 +8,13 @@ $(document).ready(function(){
         
         'use strict';
         
-        if($(window).scrollTop() < 450 ) {
+        if($(window).scrollTop() < 380 ) {
             
             $('.navbar').css ({
-              
                 'background-color': 'rgba(219,56,68,0)'
             });
             
             $('.navbar-default').css({
-                'background-color': 'rgba(219,56,68,0.0)',
-                'height': '120px',
                 'margin-top': '3.75rem'             
             });
             
@@ -46,8 +43,8 @@ $(document).ready(function(){
             });
             
             $('.navbar-default').css({
-                'background-color': 'rgba(219,56,68,0.85)',
-                'height': '100px',
+                'background-color': 'rgba(9, 9, 9, 0.35)',
+
                 'border-color': '#444'
                 
             });
@@ -68,37 +65,11 @@ $(document).ready(function(){
                 'padding-top': '0px'
                 
             });
-            
         }
-       
-        
-    });
-    
-    
+    });    
 });
 
-//add smooth scrolling
-//$(document).ready(function() {
-//    
-//    'use strict';
-//   
-//    
-//    $('.nav-item, #scroll-to-top').click(function() {
-//    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//      var target = $(this.hash);
-//      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//      if (target.length) {
-//        $('html, body').animate({
-//          scrollTop: target.offset().top
-//        }, 1000);
-//        return false;
-//      }
-//    }
-//  });
-//    
-//    
-//});
-//
+
 $(document).ready(function () {
      $('a[href^="#"]').on('click', function (e) {
          e.preventDefault();
@@ -135,29 +106,6 @@ $(document).ready(function () {
 //
 
 
-// Add bx slider to screens
-
-//$(function(){
-//  $('.bxslider').bxSlider({
-//        slideWidth: 292.5,
-//        auto: true,
-//        minSlides: 1, 
-//        maxSlides: 3, 
-//        slideMargin: 50
-//  });
-//});
-//
-
-
-// Add counter
-//$(document).ready(function() {
-//    
-//    $('.counter-num').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
-//});
-
 
 // Initialize Animation
 $(document).ready(function(){
@@ -181,31 +129,31 @@ $(document).ready(function(){
 
 function Show_Hide_Dianna() {
     var Dianna = document.getElementById("dog_menu_Dianna");
-    var Anabel = document.getElementById("dog_menu_Anabel");
+    var Ella = document.getElementById("dog_menu_Ella");
     
     if (Dianna.style.display === "none") {
         Dianna.style.display = "block",
-        Anabel.style.display = "none";
+        Ella.style.display = "none";
     } 
     else {
         Dianna.style.display = "block",
-        Anabel.style.display = "none";
+        Ella.style.display = "none";
     }
 }
 
 
-function Show_Hide_Anabel() {
+function Show_Hide_Ella() {
     var Dianna = document.getElementById("dog_menu_Dianna");
-    var Anabel = document.getElementById("dog_menu_Anabel");
+    var Ella = document.getElementById("dog_menu_Ella");
 
     
-    if (Anabel.style.display === "none") {
-        Anabel.style.display = "block",
+    if (Ella.style.display === "none") {
+        Ella.style.display = "block",
         Dianna.style.display = "none";
         
     } 
     else {
-        Anabel.style.display = "block",
+        Ella.style.display = "block",
         Dianna.style.display = "none";
     }
 }
@@ -221,3 +169,15 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
+
+
+
+//Galerie
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+

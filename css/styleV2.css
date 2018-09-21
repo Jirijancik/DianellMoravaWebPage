@@ -17,6 +17,8 @@
 
 
 
+
+
 body{
     font-family: 'Raleway', 'sams-serif';
     overflow-y: scroll;
@@ -24,24 +26,42 @@ body{
     background-color: rgba(51, 62, 2, 0.65);
     margin: 0px;
     padding: 0px;
-    height: 4500px;
+
 }
 
 h2{
     color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.875rem;
+    font-size: 3rem;
     font-weight: 600;
+    text-transform: uppercase;
     text-align: center;
 }
+.h2_section{
+        margin-top: 11rem;
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+}
+
+hr{
+    color: white;
+    width: 210px;
+    right:50%;
+    left: 50%;
+    margin-left: -105px;
+    margin-right: -105px;
+    position: relative;
+}
+
+
 p{
     color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 200;
     text-align: center;
 }
-
 
 
 
@@ -60,24 +80,18 @@ p{
 
 
 .navbar-default{
-    background-color:transparent;
-    padding-top: 0px;
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
-    border: none;
-    background-color:transparent;
     position: relative;
     z-index: 110;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    padding-top: 0px;
+    height: 82px;
+    border: none;
+    background-color:transparent;
     transition:all 1s;
     -moz-transition:all 1s;
     -o-transition:all 1s;
     -webkit-transition:all 1s;
-    
-    
-}
-
-.navbar-default{
-    height: 100px;
 }
 
 
@@ -96,7 +110,6 @@ p{
 }
 
 /*Bottom line effect*/
-/*TODO: separate lenghts*/
 .hvr-fade:before {
   content: "";
   position: absolute;
@@ -128,7 +141,7 @@ p{
 .navbar-item-text{
     color: white;
     font-family: 'Open Sans', sans-serif; 
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -137,13 +150,6 @@ p{
     position: relative;
 }
 
-
-/*
-.dog-logo-img{
-    position: absolute;
-    opacity: 0.65;
-}
-*/
 
 .navbar-brand h1{
 
@@ -191,15 +197,15 @@ p{
 .header{
     
     width: 100%;
-    height: 900px;
+    height: 90rem;
     background-image: url("../images/newV1/dog-header-big.jpg");
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-position: 50% 50%; 
-    background-size: auto; 
-    -moz-background-size:auto;
-    -o-background-size:auto;
-    -webkit-background-size:auto; 
+    background-size: cover; 
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
     background-position: top;
     position: relative;
 
@@ -210,7 +216,7 @@ p{
     background-color: rgba(31,31,31,0.30);
     background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 90rem;
     -moz-box-shadow:    inset 0 0 50px #000000;
     -webkit-box-shadow: inset 0 0 50px #000000;
     box-shadow:         inset 0 0 50px #000000;
@@ -247,9 +253,6 @@ hr,.hr-1{
     left: 50%;
     margin-left: -280px;
     margin-right: -280px;
-/*    position: relative;*/
-    
-
 }
 
 .o-stanici{
@@ -257,35 +260,12 @@ hr,.hr-1{
     margin-top: -40rem;
     right:50%;
     left: 50%;
-    margin-left: -425px;
-    margin-right: -425px;
-    width: 850px;
-    height: 350px;
+    margin-left: -42.5rem;
+    margin-right: -42.5rem;
+    width: 85rem;
+    height: 35rem;
     background-color: rgba(31,31,31,0.55);
-    border: 2px solid #FFFFFF;
-    
-
-    
-}
-
-.h2-o-stanici{
-/*        margin-top: -50rem;*/
-        font-size: 30px;
-        text-transform: uppercase;
-}
-
-#p-o-stanici{
-
-/*
-    position: relative;
-    right:50%;
-    left: 50%;
-    margin-left: -400px;
-    margin-right: -400px;
-    margin-top: 35.5px;
-*/
-    font-size: 25px;
-    
+    border: 2px solid #FFFFFF; 
 }
 
 
@@ -349,26 +329,9 @@ hr,.hr-1{
 /*dogs cards*/
 
 
-.h2-dog-cards{
-        margin-top: 12rem;
-        font-size: 30px;
-        text-transform: uppercase;
-        position: relative;
-}
-
-hr,.hr-2{
-    color: white;
-    width: 210px;
-    right:50%;
-    left: 50%;
-    margin-left: -105px;
-    margin-right: -105px;
-    position: relative;
-}
-
 .parent {
     margin-top: 5rem;
-  display: flex;
+    display: flex;
   flex-wrap: wrap;
 }
 
@@ -405,6 +368,8 @@ display:block;
 position:relative;
 -webkit-transition:all .2s linear;
 transition:all .2s linear;
+    height:600px;
+    width:430px;
 }
 
 .hovereffect h2 {
@@ -491,17 +456,14 @@ transition-delay:.1s;
 
 .x{
    display: none; 
-}
-
-#DIANNA , #ELLA{
-    padding-top: 6rem;
+    padding-top: 4.22rem;
 }
 
 .dog-menu{
     
     background-image: url(../images/newV1/dog-menu-1.jpg);
     width: 100%;
-    height: 860px;
+    height: 85rem;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -521,15 +483,15 @@ transition-delay:.1s;
     margin-top: 40px;
     margin-left: 35px;
     bottom: -40px;
-     height: 750px;
-    width: 760px;
+     height: 75rem;
+    width: 76rem;
  background-color:rgba(0,0,0,0.40);
     border: 1px solid white;
 }
 
 .h3-dog-menu{
     color: white;
-    font-size: 70px;
+    font-size: 7rem;
     text-transform: uppercase;
     position: relative;
 /*    padding-left: 100px;*/
@@ -540,11 +502,11 @@ transition-delay:.1s;
 
 .p-dog-menu{
     color: black;
-    font-size: 30px;
-    width: 600px;
+    font-size: 3rem;
+    width: 60rem;
     margin-left: 8rem;
-    padding: 40px;
-    padding-top: 85px;
+    padding: 4rem;
+    padding-top: 8.5rem;
    
 }
 
@@ -566,6 +528,122 @@ transition-delay:.1s;
     background: white;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Gallery*/
+
+.gallery{
+/*            height: 1500px;*/
+    width: 1900px;
+    height: 800px;
+    overflow-x: auto;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: -400px;
+    margin-bottom: 10em;
+    position: relative;
+    
+}
+
+
+    .column img {
+    position: relative;
+    cursor: pointer; 
+    background-repeat: no-repeat;
+    width: 60rem;
+    background-size: cover; 
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
+    background-position: cover;
+    margin: 2em 30px;
+    margin-left: -4em;
+    box-shadow: 0 4px 2px -3px;
+}
+
+.column img:hover {
+    opacity: 1;
+    display: inline-block;
+}
+
+.row-x{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 1000px;
+    float: right !important;
+    right: 0 !important;
+    width: 600px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* The expanding image container */
+.container-x {
+    margin-top: -950px;
+    position: relative;
+    display: none;
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 40rem;
+    margin-left: 8em;
+    box-shadow: 0 4px 2px -3px;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -643,16 +721,14 @@ transition-delay:.1s;
     padding-bottom: 2em;
 }
 
-.tel-map-table{}
-
 .bold{
     font-weight: 600;
 }
 
 
  #map {
-        height: 630px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
+        height: 630px;  
+        width: 100%;  
      z-index: 4;
        }
 
@@ -662,143 +738,246 @@ transition-delay:.1s;
 
 
 
-/*Gallery*/
 
-/*
-.parent2 {
-    margin-top: 110px;
-  display: flex;
-  flex-wrap: wrap;
-        align-items: center;
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    height: 40rem;
 }
 
-.child2 {
-    flex: 1 0 20%; 
-    margin: 10px;
-    width: 650px;
-    height: 300px;
-    display: flex;
-    justify-content: center; 
-    align-content: center;
-
-}
-*/
 
 
-.gallery{
-/*            height: 1500px;*/
-    width: 1900px;
-    height: 800px;
-    overflow-x: auto;
-    display: inline-block;
-    margin-left: -400px;
-    margin-bottom: 10em;
-    position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+
+    /* Resolution: 1280x960 */
+
+@media only screen and (max-width: 1280px) {
+
+    h2{
+      font-size: 2.2rem;
+    }
+    .h2_section{
+        margin-top: 8rem;
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.7rem;
+    }
+    hr{
+    width: 28rem;
+    right:50%;
+    left: 50%;
+    margin-left: -14rem;
+    margin-right: -14rem;
+        
+    }
     
-}
-
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-    
-
-
-
-    
-}
-
-/* Style the images inside the grid */
-.column img {
-/*
-    margin-bottom: -400px;
-    opacity: 0.9; 
-*/  position: relative;
-    cursor: pointer; 
-/*        width: 100%;*/
-        background-repeat: no-repeat;
-    width: 700px;
-    background-size: cover; 
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -webkit-background-size:cover; 
-    background-position: cover;
-    margin: 2em 30px;
-    margin-left: -8em;
-box-shadow: 0 4px 2px -3px;
-    
-/*
-    transform: rotate(90deg);
-  transform-origin: right top;
-*/
-}
-
-.column img:hover {
-    opacity: 1;
-    display: inline-block;
-}
-
-.row-x{
-
-/*
-transform: rotate(-90deg);
-  transform-origin: right top;
-    flex-wrap: nowrap;
-height: 2000px;
-*/
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 1000px;
-      float: right !important;
-    right: 0 !important;
-    width: 600px;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
-
-/* The expanding image container */
-.container-x {
-    margin-top: -950px;
-    position: relative;
-    display: none;
-    width: 1000px;
-    height: 500px;
-    margin-bottom: 40rem;
-    margin-left: 8em;
-    box-shadow: 0 4px 2px -3px;
-}
-
-/* Expanding image text */
-#imgtext {
+    .header, .header-overlay  {
+        height: 67rem;
+    }
+    .navbar-item-text{
+        font-size: 1.7rem !important;
+    }
+    .navbar-default{
+        height: 62px;
+    }
+    .o-stanici{
     position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
+    margin-top: -32rem;
+    margin-left: -38rem;
+    margin-right: -38rem;
+    width: 76rem;
+    height: 22rem;
+    }
+    .parent {
+    margin-top: 3.5rem;
+    }
+    .child{
+        height: 440px;
+        widows: 316px;
+        position: relative;
+    }
+    .hovereffect img {
+    height:420px;
+    width:301px;
+    }
+    .hovereffect .overlay {
+    margin-top: -8px;
+    height:436px;
+    width:312px;
+    }
+    .hovereffect img {
+        height:420px;
+        width:301px;
+    }
+    .hovereffect h2 {
+    font-size:2.2rem;
+    margin-top: 40px;
+    margin-left: -25px;
+    }
+    a.info{
+        margin-top: 20rem !important;
+        margin-right: -50px;
+        margin:320px 0 0;
+        padding:5px 10px;
+        font-size: 2rem;
+    }
+    .x{
+        padding-top: 2rem;
+    }
+    .dog-menu{
+        height: 63.75rem;
+    }
+    .info-table{
+        margin-top: 5rem;
+        height: 52.5rem;
+        width: 50rem;
+    }
+    .h3-dog-menu{
+        font-size: 4.5rem;
+        text-align: center;
+        margin-bottom: -15px;
+    }
+    .p-dog-menu{
+        font-size: 2rem;
+        width: 40rem;
+        margin-left: 5rem;
+        padding: 40px;
+        padding-top: 85px;
+    }
+    .btn-awards {
+        font-size: 2rem;
+        padding: 5px 20px;
+        margin-left: 7rem;
+        margin-top: 2rem;
+        }
+        .gallery{
+        width: 102.4rem;
+        height: 55remx;
+        margin-left: 37rem;
+        margin-bottom: 10em;
+        }
+    .parent2{
+        height: 62rem;
+    }
+    .column img {
+        width: 35rem;
+        margin: 1em 1.5rem;
+        margin-left: 2em;
+    }
+    .container-x {
+        width: 80rem;
+        height: 47rem;
+        margin-top: -78rem;
+        margin-bottom: 35rem;
+        margin-left: 3em;
+    }
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .h2-kontakt-map{
+        margin-top: 12rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .hr-map-table{
+        width: 18rem;
+        right:50%;
+        left: 50%;
+        margin-left: -9rem;
+        margin-right: -9rem;
+        margin-bottom: 1em;
+    }
+
+
+    .map-table{
+        position: absolute;
+        background-color: black;
+        opacity: 0.7;
+        width: 28rem;
+        height: 24rem;
+        z-index: 5;
+        margin-left: 4rem;
+        margin-top: 120px;
+    }
+
+    .h2-map-table{
+        color: white !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 0.5em;
+
+    }
+
+    .hr-map-table{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .p-map-table{
+        color: white !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 200;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .bold{
+        font-weight: 600;
+    }
+
+
+     #map {
+            height: 50rem;  
+            width: 100%;  
+         z-index: 4;
+           }
+
 }
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-
-
-
-
 
 
 
