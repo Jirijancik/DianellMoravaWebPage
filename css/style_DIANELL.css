@@ -1,0 +1,243 @@
+*{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        vertical-align: baseline;
+        background: transparent;
+        margin-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+
+h1{
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 2.08vw;
+    font-weight: 600;
+    margin-top:1.04vw;
+    text-transform: uppercase;
+    color: white !important;
+}
+
+
+body{
+    font-family: 'Raleway', 'sams-serif';
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(51, 62, 2, 0.65);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h2{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.h2_section{
+        margin-top: 11rem;
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+}
+h4{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    }
+
+hr{
+    color: white;
+    width: 800px;
+    right:50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-right: -400px;
+    position: relative;
+}
+
+
+p{
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: left;
+    margin: 3rem 10rem;
+}
+
+
+
+/*ABOUT US */
+
+
+.container{
+    background: rgba(0,0,0,0.70);
+    height: 3000px;
+    
+}
+
+
+.about-us-page{
+    padding-top: 20rem;
+}
+
+
+
+.img{
+    width: 1100px;
+    height: 600px;
+
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NAVBAR*/
+
+
+.navbar-default{
+    position: relative;
+    z-index: 110;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    padding-top: 0px;
+    height: 82px;
+    border: none;
+    background-color:transparent;
+    transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    -webkit-transition:all 1s;
+}
+
+
+.navbar-btn{
+    margin: 0;
+    padding: 0;
+    float: right;
+    border: none;
+    text-align: center; 
+}
+
+.disabled{
+    color: dimgray;
+    opacity: 0.5;
+}
+
+
+/*active navbar btn*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+}
+
+/*Bottom line effect*/
+.hvr-fade:before {
+  content: "";
+  position: absolute;
+/*  width: 50%;*/
+  height: 2px;
+  bottom: 0.75em;
+    right:50%;
+    left: 50%;
+    margin-left: -45px;
+    margin-right: -45px;
+/*  left: 0rem;*/
+  background-color: white;
+  visibility:hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.hvr-fade:hover:before {
+    padding-left: 3em;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*hoover text collor*/
+.navbar-item-text{
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.Brand-wrapper{
+    position: relative;
+}
+
+
+.navbar-brand h1{
+
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 2.08vw;
+    font-weight: 600;
+    margin-top:1.04vw;
+    text-transform: uppercase;
+    position: absolute;
+    color: white !important;
+}
+
+.navbar-brand-p{
+    position: absolute;
+    margin-top: -0.52vw;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.56vw;
+    font-weight: 400;
+}
+
+
+.navbar-fixed-top {
+    position:fixed !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
