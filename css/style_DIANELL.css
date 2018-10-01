@@ -7,6 +7,8 @@
         vertical-align: baseline;
         background: transparent;
         margin-top: 0;
+
+        
 }
 
 ::-webkit-scrollbar {
@@ -15,6 +17,18 @@
 }
 
 
+
+
+
+body{
+    font-family: 'Raleway', 'sams-serif';
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(51, 62, 2, 0.65);
+    margin: 0px;
+    padding: 0px;
+        display: block;
+}
 
 h1{
     text-align: center;
@@ -25,17 +39,6 @@ h1{
     margin-top:1.04vw;
     text-transform: uppercase;
     color: white !important;
-}
-
-
-body{
-    font-family: 'Raleway', 'sams-serif';
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: rgba(51, 62, 2, 0.65);
-    margin: 0px;
-    padding: 0px;
-
 }
 
 h2{
@@ -76,7 +79,7 @@ p{
     font-size: 2.5rem;
     font-weight: 200;
     text-align: left;
-    margin: 3rem 10rem;
+    margin: 4rem 10rem;
 }
 
 
@@ -84,27 +87,50 @@ p{
 /*ABOUT US */
 
 
-.container{
+.container .about-us-page{
     background: rgba(0,0,0,0.70);
-    height: 3000px;
+    position: relative;
+    padding-bottom: 2rem;
+/*    height: 3180px;*/
     
 }
 
 
 .about-us-page{
-    padding-top: 20rem;
+    padding-top: 15rem;
 }
 
 
 
 .img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 1100px;
     height: 600px;
-
-    background: white;
+    margin-left: 2rem;
+    background-image: url("../images/newV1/Gallery/img4.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-size: cover; 
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
+    background-position: top;
+    position: relative;
+    border-radius: 10px;
 }
 
-
+.overlay{
+    width: 1100px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: rgba(31,31,31,0.15);
+    background-size: cover;
+    -moz-box-shadow:    inset 0 0 40px #000000;
+    -webkit-box-shadow: inset 0 0 40px #000000;
+    box-shadow:         inset 0 0 40px #000000;
+}
 
 
 
@@ -128,7 +154,6 @@ p{
 
 /*NAVBAR*/
 
-
 .navbar-default{
     position: relative;
     z-index: 110;
@@ -143,7 +168,37 @@ p{
     -o-transition:all 1s;
     -webkit-transition:all 1s;
 }
+.caret{
+    color: white;
+}
+.dropdown-menu{
+    background-color: rgba(9, 9, 9, 0.75) !important;
+    background: rgba(9, 9, 9, 0.75) !important;
+    text-align: center;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+        background-color: rgba(9, 9, 9, 0.75) !important;
+    background: rgba(9, 9, 9, 0.75) !important;
+    text-align: center;
+}
 
+.dropdown-text{
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase; 
+}
+.dropdown-text:hover, .dropdown-text:active, .dropdown-text:focus {
+    color: white !important;
+    opacity: 0.7;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase; 
+    background-color: transparent !important;
+    background: transparent !important;
+}
 
 .navbar-btn{
     margin: 0;
@@ -168,14 +223,12 @@ p{
 .hvr-fade:before {
   content: "";
   position: absolute;
-/*  width: 50%;*/
   height: 2px;
   bottom: 0.75em;
     right:50%;
     left: 50%;
     margin-left: -45px;
     margin-right: -45px;
-/*  left: 0rem;*/
   background-color: white;
   visibility:hidden;
   -webkit-transform: scaleX(0);
@@ -220,9 +273,11 @@ p{
 .navbar-brand-p{
     position: absolute;
     margin-top: -0.52vw;
+    margin-left: 0;
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.56vw;
     font-weight: 400;
+    
 }
 
 
@@ -235,6 +290,64 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+#footer{
+    padding: 0;
+    align-content: space-between;
+}
+
+.footer{
+    margin-top: 3rem;
+    background-color: none;
+    width: 100%;
+    height: 18rem;
+    align-content: space-between;
+    position: relative;
+}
+.footer img{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -30%;
+    margin-right: 23%;
+}
+
+.footer i{
+    font-size: 5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transform: translateY(4rem);
+}
+
+
+.footer .navbar-brand h1{
+    
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 5rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    margin-top:6rem;
+    margin-right: -30rem;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0px;
+    color: white !important;
+    border: 1px solid white;
+}
 
 
 

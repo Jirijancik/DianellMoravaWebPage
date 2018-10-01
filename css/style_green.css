@@ -38,7 +38,7 @@ h2{
     text-align: center;
 }
 .h2_section{
-        margin-top: 11rem;
+        margin-top: 10rem;
         font-size: 30px;
         text-transform: uppercase;
         position: relative;
@@ -601,7 +601,7 @@ transition-delay:.1s;
     overflow: hidden;
     display: inline-block;
     margin-left: -400px;
-    margin-bottom: 10em;
+/*    margin-bottom: 2em;*/
     position: relative;
     
 }
@@ -628,7 +628,7 @@ transition-delay:.1s;
 }
 
 .row-x{
-    margin-top: 5rem;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -648,7 +648,7 @@ transition-delay:.1s;
 
 /* The expanding image container */
 .container-x {
-    margin-top: -1065px;
+    margin-top: -950px;
     position: relative;
     display: none;
     width: 1000px;
@@ -741,15 +741,12 @@ div.column.child2 img:hover{
 
 
 
-
-
 /*MAP*/
 
 .map-container{
     padding-top: 1rem;
     position: relative;
     z-index: 3;
-    margin-top: 11rem;
 }
 
 .h2-kontakt-map{

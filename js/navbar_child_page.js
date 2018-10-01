@@ -8,7 +8,7 @@ $(document).ready(function(){
         
         'use strict';
         
-        if($(window).scrollTop() < 380 ) {
+        if($(window).scrollTop() <= 0 ) {
             
             $('.navbar').css ({
                 'background-color': 'rgba(219,56,68,0)'
@@ -44,7 +44,7 @@ $(document).ready(function(){
             });
             
             $('.navbar-default').css({
-                'background-color': 'rgba(9, 9, 9, 0.35)',
+                'background-color': 'rgba(9, 9, 9, 0.75)',
 
                 'border-color': '#444'
                 
@@ -104,71 +104,4 @@ $(document).ready(function(){
     new WOW().init();
     
 });
-
-
-//hide show
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $(".dog_menu").hide();
-    });
-    $("#show").click(function(){
-        $(".dog_menu").show();
-    });
-});
-
-
-function Show_Hide_Dianna() {
-    var Dianna = document.getElementById("dog_menu_Dianna");
-    var Ella = document.getElementById("dog_menu_Ella");
-    
-    if (Dianna.style.display === "none") {
-        Dianna.style.display = "block",
-        Ella.style.display = "none";
-    } 
-    else {
-        Dianna.style.display = "block",
-        Ella.style.display = "none";
-    }
-}
-
-
-function Show_Hide_Ella() {
-    var Dianna = document.getElementById("dog_menu_Dianna");
-    var Ella = document.getElementById("dog_menu_Ella");
-
-    
-    if (Ella.style.display === "none") {
-        Ella.style.display = "block",
-        Dianna.style.display = "none";
-        
-    } 
-    else {
-        Ella.style.display = "block",
-        Dianna.style.display = "none";
-    }
-}
-
-
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 49.5938, lng: 17.2509};
-  
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-
-
- 
-//Galerie
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-}
 
