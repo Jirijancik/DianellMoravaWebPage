@@ -198,7 +198,7 @@ p{
     font-size: 2.08vw;
     font-weight: 600;
     margin-top:1.04vw;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     position: absolute;
     color: white !important;
 }
@@ -209,6 +209,7 @@ p{
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.56vw;
     font-weight: 400;
+    
 }
 
 
@@ -265,21 +266,57 @@ p{
 
 
 
+/*MODAL CERTIFICATE*/
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    
+}
 
+/* Modal Content */
+.modal-content {
+    background-color: #7a815a;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+.modal-img{
+    background-image: url("../images/newV1/Mezin%C3%A1rodn%C4%9B%20chr%C3%A1n%C4%9Bn%C3%A1%20chovatelskl%C3%A1%20stanice%20DIANELL%20Morava.jpg");
+    background-position: 50% 50%; 
+    background-size: 100% 100%; 
+    -moz-background-size:100% 100%;
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 33vw;
+    box-shadow: 2px 8px 10px -4px black;
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
@@ -301,12 +338,12 @@ hr,.hr-1{
     margin-top: -40rem;
     right:50%;
     left: 50%;
-    margin-left: -42.5rem;
-    margin-right: -42.5rem;
+    margin-left: -02.5rem;
+    margin-right: -82.5rem;
     width: 85rem;
     height: 35rem;
     background-color: rgba(31,31,31,0.55);
-    border: 2px solid #FFFFFF; 
+/*    border: 2px solid #FFFFFF; */
 }
 
 
@@ -353,6 +390,23 @@ hr,.hr-1{
 }
 
 
+
+.tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.navbar-item-text:hover .tooltiptext {
+    visibility: visible;
+}
 
 
 
@@ -839,37 +893,58 @@ div.column.child2 img:hover{
     position: relative;
 }
 .footer img{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: -30%;
-    margin-right: 23%;
+
 }
 
-.footer i{
+.fab{
     font-size: 5rem;
+    color: #333;
     padding-right: 1rem;
     padding-left: 1rem;
-    transform: translateY(4rem);
+    transform: translateY(1rem);
+    
+
+}
+.fab:hover{
+    color: #333;
+    text-decoration: none;
+    transition-duration: 0.7s;
+    transform: scaleX(1);
+    text-shadow: 1.3px 1.3px black;
 }
 
 
 .footer .navbar-brand h1{
 
     font-family: 'Open Sans', sans-serif; 
-    font-size: 5rem;
+    font-size: 6rem;
     padding: 1rem 2rem;
     font-weight: 600;
-    margin-top:6rem;
+    margin-top:3rem;
     margin-right: -30rem;
     text-transform: uppercase;
     position: absolute;
     right: 0px;
     color: white !important;
     border: 1px solid white;
+    transition-duration: 0.4s;
+}
+.footer .navbar-brand h1:hover{
+    box-shadow:0 0 2px #fff;
+    background: rgba(250,250,250,0.05);
+/*    text-shadow: 0.6px 0.7px black;*/
+    
 }
 
-
-
+.bongo{
+   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -30%;
+    margin-right: 23%;
+    position: relative;
+    
+}
 
 
 
