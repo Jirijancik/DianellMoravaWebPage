@@ -8,7 +8,7 @@ $(document).ready(function(){
         
         'use strict';
         
-        if($(window).scrollTop() < 380 ) {
+        if($(window).scrollTop() < 350 ) {
             
             $('.navbar').css ({
                 'background-color': 'rgba(219,56,68,0)'
@@ -44,7 +44,7 @@ $(document).ready(function(){
             });
             
             $('.navbar-default').css({
-                'background-color': 'rgba(9, 9, 9, 0.35)',
+                'background-color': 'rgba(9, 9, 9, 0.55)',
 
                 'border-color': '#444'
                 
@@ -58,6 +58,12 @@ $(document).ready(function(){
             $('.navbar-brand-p').css({
                'font-size': '1.2vw',
                 'margin-top': '0px'
+                
+            }); 
+            
+            $('ul.nav.navbar-nav.navbar-right').css({
+               'margin-top': '0.25vw',
+                'margin-right': '0.35vw'
                 
             }); 
             
