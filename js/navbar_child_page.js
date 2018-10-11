@@ -11,11 +11,11 @@ $(document).ready(function(){
         if($(window).scrollTop() <= 0 ) {
             
             $('.navbar').css ({
-                'background-color': 'rgba(219,56,68,0)'
+                'background-color': 'rgba(9, 9, 9, 0.05)'
             });
             
             $('.navbar-default').css({
-                'margin-top': '3.75rem'             
+                'margin-top': '1.5rem'             
             });
             
             $('.navbar-item-text').css({
@@ -58,6 +58,12 @@ $(document).ready(function(){
             $('.navbar-brand-p').css({
                'font-size': '1.2vw',
                 'margin-top': '0px'
+                
+            }); 
+            
+            $('ul.nav.navbar-nav.navbar-right').css({
+               'margin-top': '0.25vw',
+                'margin-right': '0.35vw'
                 
             }); 
             

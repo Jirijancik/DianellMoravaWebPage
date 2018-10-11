@@ -11,7 +11,7 @@ $(document).ready(function(){
         if($(window).scrollTop() < 350 ) {
             
             $('.navbar').css ({
-                'background-color': 'rgba(219,56,68,0)'
+                'background-color': 'rgba(219,56,68,0.0)'
             });
             
             $('.navbar-default').css({
