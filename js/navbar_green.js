@@ -5,7 +5,11 @@ $(document).ready(function(){
     'use strict';
     
     $(window).scroll(function() {
+      
         
+        if ($(window).width() >740 ) {
+   
+         
         'use strict';
         
         if($(window).scrollTop() < 350 ) {
@@ -73,9 +77,18 @@ $(document).ready(function(){
                 'padding-top': '0px'
                 
             });
-        }
+        }   
+            
+            
+            
+}
+        
+        
     });    
 });
+
+
+
 
 
 $(document).ready(function () {
@@ -96,9 +109,9 @@ $(document).ready(function () {
 
 /*Dropdown*/
 $('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(0);
+  $(this).find('.dropdown-menu-hover').stop(true, true).delay(0).fadeIn(0);
 }, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(0);
+  $(this).find('.dropdown-menu-hover').stop(true, true).delay(0).fadeOut(0);
 });
 
 
@@ -123,34 +136,34 @@ $(document).ready(function(){
 });
 
 
-function Show_Hide_Dianna() {
-    var Dianna = document.getElementById("dog_menu_Dianna");
-    var Ella = document.getElementById("dog_menu_Ella");
+function Show_Hide_Diana() {
+    var Diana = document.getElementById("diana_x");
+    var Ella = document.getElementById("ella_x");
     
-    if (Dianna.style.display === "none") {
-        Dianna.style.display = "block",
+    if (Diana.style.display === "none") {
+        Diana.style.display = "block",
         Ella.style.display = "none";
     } 
     else {
-        Dianna.style.display = "block",
+        Diana.style.display = "block",
         Ella.style.display = "none";
     }
 }
 
 
 function Show_Hide_Ella() {
-    var Dianna = document.getElementById("dog_menu_Dianna");
-    var Ella = document.getElementById("dog_menu_Ella");
+    var Diana = document.getElementById("diana_x");
+    var Ella = document.getElementById("ella_x");
 
     
     if (Ella.style.display === "none") {
         Ella.style.display = "block",
-        Dianna.style.display = "none";
+        Diana.style.display = "none";
         
     } 
     else {
         Ella.style.display = "block",
-        Dianna.style.display = "none";
+        Diana.style.display = "none";
     }
 }
 
@@ -158,11 +171,11 @@ function Show_Hide_Ella() {
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
-  var uluru = {lat: 49.5938, lng: 17.2509};
+  var uluru = {lat: 49.476750, lng: 17.516167};
   
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12, center: uluru});
+      document.getElementById('map'), {zoom: 15, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }

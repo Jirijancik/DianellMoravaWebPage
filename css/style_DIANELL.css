@@ -64,11 +64,11 @@ h4{
 
 hr{
     color: white;
-    width: 800px;
+    width: 41.666vw;
     right:50%;
     left: 50%;
-    margin-left: -400px;
-    margin-right: -400px;
+    margin-left: -20.833vw;
+    margin-right: -20.833vw;
     position: relative;
 }
 
@@ -76,10 +76,11 @@ hr{
 p{
     color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.3vw;
     font-weight: 200;
     text-align: left;
     margin: 4rem 10rem;
+    line-height: 1.9vw
 }
 
 
@@ -108,7 +109,6 @@ p{
     -webkit-background-size:contain;
     background-position: top;
     position: relative;
-
 }
 
 
@@ -205,7 +205,7 @@ p{
 
 
 .about-us-page{
-    padding-top: 15rem;
+    padding-top: 6vw;
 }
 
 
@@ -214,7 +214,7 @@ p{
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 110rem;
-    height: 60rem;
+    height: 58rem;
     margin-left: 2rem;
     background-image: url("../images/ONas/AresFoto.jpg");
     background-attachment: fixed; 
@@ -224,17 +224,23 @@ p{
     -moz-background-size:contain;
     -o-background-size:contain;
     -webkit-background-size:contain; 
-    background-position: top;
+    background-position: center;
     position: relative;
     border-radius: 1rem;
 }
 .img.img2{
      background-image: url("../images/ONas/Medajle.jpg");
 }
+.img.img3{
+     background-image: url("../images/ONas/Trofeje.jpg");
+}
+.img.img4{
+     background-image: url("../images/ONas/Voda.jpg");
+}
 
 .overlay{
     width: 110rem;
-    height: 60rem;
+    height: 58rem;
     border-radius: 1rem;
     background-color: rgba(31,31,31,0.15);
     background-size: cover;
@@ -414,54 +420,165 @@ p{
 
 
 
-
 /*Footer*/
-#footer{
-    padding: 0;
-    align-content: space-between;
-}
 
-.footer{
-    margin-top: 3rem;
-    background-color: none;
-    width: 100%;
-    height: 18rem;
-    align-content: space-between;
-    position: relative;
-}
-.footer img{
-    position: relative;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: -30%;
-    margin-right: 23%;
-}
 
-.footer i{
+.fab{
     font-size: 5rem;
+    color: #333;
     padding-right: 1rem;
     padding-left: 1rem;
-    transform: translateY(4rem);
+    transform: translateY(1rem);
 }
-
+.fab:hover{
+    color: #333;
+    text-decoration: none;
+    transition-duration: 0.7s;
+    transform: scaleX(1);
+    text-shadow: 1.3px 1.3px black;
+}
+.img-FCI{
+    width: 26vw;
+    height: 9.3;
+}
 
 .footer .navbar-brand h1{
-    
     font-family: 'Open Sans', sans-serif; 
-    font-size: 5rem;
+    font-size: 3vw;
     padding: 1rem 2rem;
     font-weight: 600;
-    margin-top:6rem;
-    margin-right: -30rem;
+    margin-left: 5vw;
+    margin-top: -1vw;
     text-transform: uppercase;
-    position: absolute;
-    right: 0px;
     color: white !important;
     border: 1px solid white;
+    transition-duration: 0.4s;
+}
+.footer .navbar-brand h1:hover{
+    box-shadow:0 0 2px #fff;
+    background: rgba(250,250,250,0.05);
+}
+
+.bongo{
+   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+    padding: 2vw;
+
+ 
+}
+.footer {
+
+  display: flex;
+  flex: 1;
+}
+.columns{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex:1;
+}
+.main{
+  flex: 1;
+  order: 2;
+}
+.sidebar-first{
+  width: 40%;
+  order: 1;
+}
+.sidebar-second{ 
+  width: 40%;
+  order: 3;
 }
 
 
+@media only screen and (max-width: 1366px) {
+    
+    #topspace{
+    width: 100%;
+    height: 6vw;
+    background-color: #464b30;
+}
+    
+
+.header{
+    height: 20.5vw;
+}
+    .header-overlay{
+    height: 20.5vw;
+}
+    p{
+         font-size: 1.5vw;
+    }
+    .img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 110rem;
+    height: 50rem;
+    margin-left: 2rem;
+    background-image: url("../images/ONas/AresFoto.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+     background-size:cover; 
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover; 
+    background-position: center;
+    position: relative;
+    border-radius: 1rem;
+}
+    .overlay{
+    width: 110rem;
+    height: 50rem;
+    border-radius: 1rem;
+    background-color: rgba(31,31,31,0.15);
+    background-size: cover;
+    -moz-box-shadow:    inset 0 0 40px #000000;
+    -webkit-box-shadow: inset 0 0 40px #000000;
+    box-shadow:         inset 0 0 40px #000000;
+}
+    
+}
+
+@media screen and (max-width: 991px) {
+     
 
 
+    
+    
+    .img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 57.3vw;
+    height: 30.2vw;
+    margin-left: 8vw;
+    background-image: url("../images/ONas/AresFoto.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+     background-size: contain; 
+    -moz-background-size:contain;
+    -o-background-size:contain;
+    -webkit-background-size:contain; 
+    background-position: center;
+    position: relative;
+    border-radius: 1rem;
+}
+   
+    
+.overlay{
+    width: 57.3vw;
+    height: 30.2vw;
+}
 
+    
+
+}
 

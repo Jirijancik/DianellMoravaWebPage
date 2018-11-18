@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dog - V2</title>
+        <title>DIANELL Morava</title>
         
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Chovatelská stanice Dianell morava, chovající braque D’Avergne ohařské psy.">
+        
+        <meta name="keywords" content="Chovatelská stanice, ohař, pes, Dianell, Dianell Morava, braque, braque D’Avergne, Ella, Diana">
         
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -15,11 +19,27 @@
                 <!-- favicon -->
         <link rel="icon" type="image/png" href="images/favicon.png">
         
+                <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
                 <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style_green.css">
 
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127736188-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-127736188-1');
+        </script>
+        
+        
+        
     </head>
     <body>
   
@@ -36,7 +56,7 @@
      <header class="header" id="HOME">    
          
         <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
+<div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <div class="brand-wrapper">
@@ -48,7 +68,7 @@
                     
                     
                 </div> 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -58,38 +78,57 @@
 
                       <!--RIGHT SIDE-->
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-             
-                  <li class="dropdown">
-              <a href="#HOME" class="dropdown-toggle hvr-fade" data-toggle="dropdown"><span class="pulse navbar-item-text .hvr-sweep-to-bottom">O Stanici</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right">        
+                <li class="navbar-btn hvr-fade"><a href="#OURDOGS"><span class="navbar-item-text">Naši Psi</span></a></li>
+                <li class="navbar-btn hvr-fade disabled"><a href="#"><span class="navbar-item-text">
+                        Štěňata
+                          <span class="tooltiptext">Štěňátka se plánují na Listopad</span>                      
+                      </span></a></li>
+                <li class="navbar-btn hvr-fade"><a href="#KONTAKT"><span class="navbar-item-text">Kontakt</span></a></li>
+                <li class="navbar-btn hvr-fade"><a href="#GALLERY"><span class="navbar-item-text ">Fotogalerie</span></a></li>
+        </ul>
+        
+        
+        
+        
+        
+        <ul class="nav navbar-nav navbar-right">
+    
+            <li class="dropdown dropdown-desktop">
+
+              <a href="#HOME" class="dropdown-toggle banner-dropdown-toggle hvr-fade" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="pulse navbar-item-text .hvr-sweep-to-bottom">O Stanici</span><span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-hover">
                 <li><a href="./DIANELL.html"><span class="dropdown-text">O nás</span></a></li>
+                  <li role="separator" class="divider"></li>
                 <li><a href="#"><span class="dropdown-text">Aktuálně</span></a></li>
                 <li><a href="#" id="myBtn"><span class="dropdown-text">Certifikace</span></a></li>
               </ul>
+
             </li>
-                  
-                  
-                  
-                  <li class="navbar-btn hvr-fade"><a href="#OURDOGS"><span class="navbar-item-text">Naši Psi</span></a></li>
-                  <li class="navbar-btn hvr-fade disabled"><a href="#"><span class="navbar-item-text">
-                      
-                      
-                        Štěňata
-                          <span class="tooltiptext">Štěňátka se plánují na Listopad</span>
-                        
-                      
-                      
-                      
-                      
-                      
-                      </span></a></li>
-                  <li class="navbar-btn hvr-fade"><a href="#KONTAKT"><span class="navbar-item-text">Kontakt</span></a></li>
-                  <li class="navbar-btn hvr-fade"><a href="#GALLERY"><span class="navbar-item-text ">Fotogalerie</span></a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+
+            
+            
+        <div class="dropdown-mobile">         
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle banner-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="pulse navbar-item-text hvr-sweep-to-bottom">O Stanici</span><span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="./DIANELL.html"><span class="dropdown-text">O nás</span></a></li>
+            <li><a href="#"><span class="dropdown-text">Aktuálně</span></a></li>
+            <li><a href="#" id="myBtn"><span class="dropdown-text">Certifikace</span></a></li>
+          </ul>
+
+            
+       </div>     
+            
+        </ul>
+        
+
+        
+        
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
         </nav>     
             
         <div class="header-overlay"></div>
@@ -100,7 +139,7 @@
         
              <!--ABOUT US-->
         
-        <div class=" o-stanici" id="ABOUT_US">
+        <div class=" o-stanici wow slideInUp" id="ABOUT_US">
         
             <div class="">
         
@@ -108,7 +147,7 @@
             
                     <h2>Chovatelská stanice DIANELL MORAVA</h2>
                     <hr class="hr-1">
-                    <p>Vznikla díky naší feně auvergneského ohaře Diana Piaf DAMA Hunting dog. Její úspěšná výstavní a pracovní kariéra, spolu s výborným výsledkem vyšetření na dysplazii kyčelních kloubů, nás podpořila v myšlence věnovat se chovu tohoto krásného málopočetného francouzského plemene. V originále má název braque D’Avergne, což doslovně znamená ohař z [Overň]. </p>
+                    <p>Naše chovatelská stanice Dianell Morava vznikla díky naší první feně Auvergneského ohaře Dianě. Její výstavní úspěchy a skvělé zdravotní předpoklady daly vzniknout nápadu chovat toto překrásné plemeno. Zanedlouho se do naší smečky připojila také Dianina mladší sestra Ella. Auvergneský ohař je původem z Francie, což dokazuje i jeho pojmenování – v originále braque D’Avergne neboli ohař z [Overň].</p>
                 
                 </div>
             
@@ -150,24 +189,25 @@
                         
             <hr>
             
-            <p>Naší psí rodinu momentálně tvoří dvě fenečky Dianna a Ella</p>
+            <p>Naši psí rodinu aktuálně tvoří dvě fenky Diana a Ella</p>
             
+            <div class="dogs-menu-standart">
             
             <div class="parent">
                 
-                <div class="child dog-1 hovereffect"> <img class="dog-img shadow" src="images/DogCards/Dianna.jpg" > 
+                <div class="child dog-1 hovereffect wow fadeInLeft"> <img class="dog-img shadow" src="images/DogCards/Diana.jpg" > 
                     
                   <div class="overlay">  
                       
-                      <h2>Dianna</h2>
+                      <h2>Diana</h2>
                       
-                      <a class="info" onclick="Show_Hide_Dianna()" href="#DIANNA">Více</a>
+                      <a class="info" onclick="Show_Hide_Diana()" href="#DIANA">Více</a>
                       
                   </div> 
                     
                 </div>
                 
-              <div class="child dog-2 hovereffect"> <img class="dog-img shadow" src="images/DogCards/Ella.jpg" > 
+              <div class="child dog-2 hovereffect wow fadeInRight"> <img class="dog-img shadow" src="images/DogCards/Ella.jpg" > 
                 
                 <div class="overlay">  
                       
@@ -183,23 +223,62 @@
               <div class="child dog-4 "> <img class="dog-img shadow" src="images/newV1/dog-card-2.jpg" height="600px" width="430">  </div>
 -->
             </div>
+        </div>
         
-        
+            <div class="dogs-menu-mobile">
+            
+                <div class="parent">
+                        <a class="info"  href="#DIANA">
+                <div class="child dog-1 hovereffect wow fadeInLeft" onclick="Show_Hide_Diana()"> <img class="dog-img shadow" src="images/DogCards/Diana.jpg" > 
+                    
+                  <div class="overlay">  
+                      
+                      <h2>Diana</h2>
+                      
+                     
+                      
+                  </div> 
+                    
+                </div>
+                </a> 
+                    
+                    
+                    <a class="info"  href="#ELLA">
+              <div class="child dog-2 hovereffect wow fadeInRight" onclick="Show_Hide_Ella()"> <img class="dog-img shadow" src="images/DogCards/Ella.jpg" > 
+                
+                <div class="overlay">  
+                      
+                      <h2>Ella</h2>
+                      
+                      
+                      
+                </div>
+                
+             </div>
+           </a>
+<!--
+              <div class="child dog-3 "> <img class="dog-img shadow" src="images/newV1/dog-card-1.jpg" height="600px" width="430">  </div>
+              <div class="child dog-4 "> <img class="dog-img shadow" src="images/newV1/dog-card-2.jpg" height="600px" width="430">  </div>
+-->
+            </div>
+                
+            </div>
+            
         </div>
         
         
         
         
         
-        <!--  DIANNA-MENU  -->
-    <div id="DIANNA">   
-    <div class="x" id="dog_menu_Dianna">    
+        <!--  DIANA-MENU  -->
+    <div id="DIANA">   
+    <div class="x dog_menu_Diana" id="diana_x">    
         <div class="overlay-dog-menu">
-        <div class="dog-menu" id="dog_menu_Dianna">
+        <div class="dog-menu dog_menu_Diana" id="">
             
             <div class="info-table">
                 
-                <h3 class="h3-dog-menu">Dianna</h3>
+                <h3 class="h3-dog-menu">Diana</h3>
                 
                 <hr class="hr-2">
                 
@@ -227,7 +306,6 @@
                 
                 <p class="p-dog-menu">
                     multi CAC, CACIB, BOB <br />
-                    multi CAC, CACIB, BOB <br />
                 </p> 
                 
                 <h4 class="h4-dog-menu">
@@ -238,7 +316,7 @@
                 </p>
             
                 <button class="btn btn-default btn-awards" type="button">Rodokmen</button>
-                <button class="btn btn-default btn-awards" type="button">Soutěže</button>
+                <button class="btn btn-default btn-awards" type="button">Výstavy</button>
                 
             </div>
 
@@ -248,11 +326,11 @@
   </div> 
         
                 
-        <!--  DIANNA-MENU  -->
+        <!--  ELLA-MENU  -->
   <div id="ELLA">    
-    <div class="x" id="dog_menu_Ella">    
-        
-        <div class="dog-menu" id="dog_menu_Ella" >
+    <div class="x dog_menu_Ella" id="ella_x">    
+      <div class="overlay-dog-menu">
+        <div class="dog-menu dog_menu_Ella" id="">
             
             <div class="info-table">
             
@@ -274,23 +352,23 @@
                 </h4>
                 <p class="p-dog-menu">
                     VN1, Junior šampion CZ, SK <br />
-                    CAC, CACIB, BOB <br />
+                    CAC, CACIB, BOB (CZ, SK, PL, A) <br />
                 </p>
                 
                 <h4 class="h4-dog-menu">
                 Pracovní zkoušky:
                 </h4>
                 <p class="p-dog-menu">
+                PZ I. Cena  <br />
                 ZV I. cena 224 bodů nos 4
                 </p>
                 <div id="ella-space"></div>
                 <button class="btn btn-default btn-awards" type="button">Rodokmen</button>
-                <button class="btn btn-default btn-awards" type="button">Soutěže</button>
+                <button class="btn btn-default btn-awards" type="button">Výstavy</button>
                 
             </div>
-
+          </div>
         </div>
-        
     </div>   
   </div>        
         
@@ -310,18 +388,18 @@
             <div class="row-x">
             
                   <div class="column child2">
-                    <img src="images/Gallery/f_1.jpg" alt="Dianna"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_1.jpg" alt="Diana"  onclick="myFunction(this);">
                     <div class="gallery-text">
                         <h1>Diana</h1>
-                        <p>Lovecká fotka s koroptví</p>
+                        <p>Aport pernaté</p>
                     </div>
                   </div>
                 
                   <div class="column child2">
-                    <img src="images/Gallery/f_2.jpg" alt="Dianna"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_2.jpg" alt="Diana"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Diana</h1>
-                        <p>Skok plavný</p>
+                        <p>V terénu</p>
                     </div>
                   </div>
                 
@@ -329,12 +407,12 @@
                     <img src="images/Gallery/f_3.jpg" alt="Ella"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Ella</h1>
-                        <p>Lovecká fotka s koroptví</p>
+                        <p>Aport pernaté</p>
                     </div>
                   </div>
                 
                   <div class="column child2">
-                    <img src="images/Gallery/f_4.jpg" alt="Ella"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_4.jpg" alt="Diana"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Diana</h1>
                         <p>Usměv do kamery</p>
@@ -342,7 +420,7 @@
                   </div>
                 
                   <div class="column child2">
-                    <img src="images/Gallery/f_5.jpg" alt="Ella"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_5.jpg" alt="Diana"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Diana</h1>
                         <p>Letní fotka v mákovém poli</p>
@@ -357,7 +435,7 @@
                   </div>
                 
                   <div class="column child2">
-                    <img src="images/Gallery/f_7.jpg" alt="Ella"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_7.jpg" alt="Diana"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Diana</h1>
                         <p>Zamyšlená a spokojená</p>
@@ -372,7 +450,7 @@
                   </div>
                 
                   <div class="column child2">
-                    <img src="images/Gallery/f_9.jpg" alt="Ella"  onclick="myFunction(this);">
+                    <img src="images/Gallery/f_9.jpg" alt="Ella a Diana"  onclick="myFunction(this);">
                       <div class="gallery-text">
                         <h1>Ella a Diana</h1>
                         <p>Pýcha a radost</p>
@@ -406,7 +484,7 @@
      
      <hr>
      
-     <div class="map-table">
+     <div class="map-table wow bounceInLeft">
      
      
      <!--KONTAKT-->
@@ -415,12 +493,13 @@
      
     <hr class="hr-map-table">     
      
-    <h2 class="h2-map-table">Chovatelská Stanice Morava</h2>     
-         
-     <p class="p-map-table">Na Zábradlí 986/6, Zlín, 976 03</p>
+    <h2 class="h2-map-table">CHOVATELSKÁ STANICE DIANELL Morava</h2>     
+       
+     <p class="p-map-table">Gabriela a Miroslav Jiráskovi</p>     
+     <p class="p-map-table">Radslavice, 751 11</p>
      
-     <p class="tel-map-table"><span class="bold">TEL:</span> +420 774 684 875</p>
-     
+     <p class="tel-map-table"><span class="bold">TEL:</span> +420 731 187 595</p>
+     <p class="p-map-table">dianaellamorava@seznam.cz </p>
      
      
      </div>
@@ -433,29 +512,41 @@
         
 <!--FOOTER-->
 
-<div class="container" id="FOOTER">
-
-    
-    <div class="footer">
+  
         
         
-        <a class="bongo" href="http://www.fci.be/en/">
-        <img class="img-FCI" src="images/Resources/fci_logo.png" alt="FCI Certificate">
-        </a>
         
-            <a class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
+<div class="wrapper" id="FOOTER">
+  <section class="footer">
+    <div class="columns">
+      <main class="main wow bounce">
+          
+            <a class="fab fa-facebook-square" href="https://www.facebook.com/dianellmorava/"></a>
 
             <a class="fab fa-youtube" href="https://www.youtube.com/"></a>
 
             <a class="fab fa-twitter-square" href="https://twitter.com/"></a>
 
             <a class="fab fa-instagram" href="https://www.instagram.com/?hl=en"></a>
+          
+      </main>
+      <aside class="sidebar-first">
+          
+        <a class="bongo" href="http://www.fci.be/en/">
+        <img class="img-FCI" src="images/Resources/fci_logo.png" alt="FCI Certificate">
+        </a>
+        
+      </aside>
+        
+        
+      <aside class="sidebar-second">
         
         <a class="navbar-brand" href="#HOME"><h1>DIANELL MORAVA</h1></a>
-
-    </div> 
-        
-</div>        
+          
+      </aside>
+    </div>
+  </section>
+</div>
         
         
         
@@ -464,6 +555,8 @@
 <script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>
 <script language="JavaScript" type="text/javascript" src="js/bootstrap.min.js"></script>
         
+                <!-- Wow js lib -->
+        <script src="js/wow.min.js"></script>
  
         
                <!-- Navbar JavaScript -->
